@@ -4,22 +4,31 @@
 
 它包含了基本的调用功能，包括测试，打印走纸，安全键盘等等功能。
 
-## Using
+## 使用
 
 创建一个新项目（已有cordova项目不用创建）
 
     $ cordova create demo com.example.demo demo
     
-安装插件
+### 安装插件
 
     $ cd demo
     $ cordova plugin add https://github.com/Xonlystar/cordova-plugin-smartpos.git
     
 
-编辑 `www/js/index.js` 并添加下面的代码 `onDeviceReady`
+### 调用插件
+- test方法
 
 ```js
-    hello.test("World", function(message) {
+    smartpos.test("World", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- print方法
+```js
+    smartpos.print("World", function(message) {
         alert(message);
     }, function() {
         alert("插件调用出错");

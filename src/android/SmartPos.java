@@ -14,11 +14,15 @@ public class SmartPos extends CordovaPlugin {
             String name = data.getString(0);
             String message = "Hello, " + name;
             callbackContext.success(message);
-
+            android.widget.Toast.makeText(cordova.getActivity(), message,android.widget.Toast.LENGTH_LONG).show();  
             return true;
+        }else if (action.equals("print")) {
 
-        } else {
-            
+            String name = data.getString(0);
+            String message = "Hello, " + name;
+            callbackContext.success(message);
+            return true;
+        } else {            
             return false;
 
         }
