@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugin-smartpos",
+  "version": "1.0.0",
+  "description": "这是一个简单的安卓版pos机s1000 SDK调用的插件.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
