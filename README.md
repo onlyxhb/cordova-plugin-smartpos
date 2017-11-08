@@ -17,18 +17,127 @@
     
 
 ### 调用插件
-- test方法
+- isbind方法----判断是否绑定服务
 
 ```js
-    smartpos.test("World", function(message) {
+    smartpos.isbind("", function(message) {
         alert(message);
     }, function() {
         alert("插件调用出错");
     });
 ```
-- print方法
+- bind方法----绑定服务
+
 ```js
-    smartpos.print("World", function(message) {
+    smartpos.bind("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- unbind方法----解绑服务
+
+```js
+    smartpos.unbind("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- searchCard方法----寻卡
+
+```js
+    smartpos.searchCard("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- print方法----打印
+
+```js
+    smartpos.print("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- pinpad方法----密码键盘
+
+```js
+    smartpos.pinpad("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- systemInterface方法----系统接口
+
+```js
+    smartpos.systemInterface("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- emv方法----EMV
+
+```js
+    smartpos.emv("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- pin方法----PIN
+
+```js
+    smartpos.pin("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- scan方法----扫码接口
+
+```js
+    smartpos.scan("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- stopScan方法----停止扫码
+
+```js
+    smartpos.stopScan("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- ICApdu方法----IC卡APDU
+
+```js
+    smartpos.ICApdu("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- RFApdu方法----RF卡APDU
+
+```js
+    smartpos.RFApdu("", function(message) {
+        alert(message);
+    }, function() {
+        alert("插件调用出错");
+    });
+```
+- PsamApdu方法----PSAM卡APDU
+
+```js
+    smartpos.PsamApdu("", function(message) {
         alert(message);
     }, function() {
         alert("插件调用出错");

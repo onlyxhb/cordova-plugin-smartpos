@@ -23,12 +23,44 @@
       </feature>
     </config-file>
     
+    <config-file parent="/*" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_PIN_BLOCK" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_PIN_MAC" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_ENCRYPT_DATA" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_UPDATE_TKEY" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_UPDATE_MKEY" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_UPDATE_WKEY" />
+
+        <uses-permission android:name="android.permission.SMARTPOS_PRINTER" />
+        <uses-permission android:name="android.permission.SMARTPOS_ICCARD" />
+        <uses-permission android:name="android.permission.SMARTPOS_RFCARD" />
+        <uses-permission android:name="android.permission.SMARTPOS_MAGCARD" />
+        <uses-permission android:name="android.permission.SMARTPOS_PSAMCARD" />
+        <uses-permission android:name="android.permission.SMARTPOS_SERIALPORT" />
+        <uses-permission android:name="android.permission.SMARTPOS_SYSTEMDEV" />
+        <uses-permission android:name="android.permission.SMARTPOS_SYSTEMDEV_ALARM" />
+        <uses-permission android:name="android.permission.SMARTPOS_SYSTEMDEV_INSTALL" />
+        <uses-permission android:name="android.permission.SMARTPOS_SYSTEMDEV_OS_UPDATE" />
+        <uses-permission android:name="android.permission.SMARTPOS_UPDATE_APPLICATION_AUTH_LIST" />
+        <uses-permission android:name="android.permission.SMARTPOS_EMVL2" />
+        <uses-permission android:name="android.permission.SMARTPOS_PINPAD_PIN_BLOCK" />
+        <uses-permission android:name="android.permission.SMARTPOS_SCANCODE" />
+        <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="25" />
+    </config-file>
+    
     <source-file src="src/android/libs/start-smart-pos-interface.jar" target-dir="libs" />
-    <source-file src="src/android/libs/gson-2.6.1.jar" target-dir="src/com/example/plugin/util/" />
+    <source-file src="src/android/libs/gson-2.6.1.jar" target-dir="libs" />
     <source-file src="src/android/util/ConVert.java" target-dir="src/com/example/plugin/util/" />
     <source-file src="src/android/util/HexUtil.java" target-dir="src/com/example/plugin/util/" />
     <source-file src="src/android/util/Order.java" target-dir="src/com/example/plugin/util/" />
-    <source-file src="src/android/SmartPos.java" target-dir="src/com/example/plugin/util/"/>
+    <source-file src="src/android/SmartPos.java" target-dir="src/com/example/plugin/"/>
   </platform>
 
 </plugin>
