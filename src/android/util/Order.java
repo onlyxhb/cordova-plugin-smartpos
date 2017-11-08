@@ -1,4 +1,4 @@
-package com.start.smartposdemo.util;
+package com.example.plugin.util;
 
 import java.util.ArrayList;
 

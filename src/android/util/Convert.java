@@ -1,4 +1,4 @@
-package com.start.smartposdemo.util.format;
+package com.example.plugin.util;
 
 public class Convert {
 	
