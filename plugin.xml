@@ -22,8 +22,13 @@
         <param name="android-package" value="com.example.plugin.SmartPos"/>
       </feature>
     </config-file>
-
-    <source-file src="src/android/SmartPos.java" target-dir="src/com/example/plugin/"/>
+    
+    <source-file src="src/android/libs/start-smart-pos-interface.jar" target-dir="libs" />
+    <source-file src="src/android/libs/gson-2.6.1.jar" target-dir="src/com/example/plugin/util/" />
+    <source-file src="src/android/util/ConVert.java" target-dir="src/com/example/plugin/util/" />
+    <source-file src="src/android/util/HexUtil.java" target-dir="src/com/example/plugin/util/" />
+    <source-file src="src/android/util/Order.java" target-dir="src/com/example/plugin/util/" />
+    <source-file src="src/android/SmartPos.java" target-dir="src/com/example/plugin/util/"/>
   </platform>
 
 </plugin>
